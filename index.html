@@ -63,17 +63,78 @@
                     </a>
                   </li>
         </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                 <!-- search -->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="ابحث هنا ">
+                        <ion-icon name="search-outline"></ion-icon>
+
+                    </label>
+                </div>
+                <!-- User Image -->
+                <div class="user">
+                    <img src="img/user.jpg" width="50px" height="50px"  alt="avater">
+                </div>
+            </div>
+            <!--End of topbar-->
+            <div class="cardBox">
+             
+                <div class="card">
+                    <div>
+                        <div class="number">150</div>
+                        <div class="cardName">إجمالي التحليلات </div>
+                    </div>
+           
+                    <div class="iconBx">
+                        <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">980</div>
+                        <div class="cardName">تحليلات هذا الشهر</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="analytics-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="number">980</div>
+                        <div class="cardName">حجم البيانات  </div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="server-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="number">1,504</div>
+                        <div class="cardName">ملف بيانات </div>
+                    </div>
+                 
+                    <div class="iconBx">
+                        <ion-icon name="receipt-outline"></ion-icon>
+                    </div>
+                </div>
+
+
+            </div>
+
+           
+
+        </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
-    <script>
-        let list = document.querySelectorAll('.navigation li');
-        function activeLink(){
-            list.forEach((item)=>
-            item.classList.remove('hovered'));
-            this.classList.add('hovered')
-        }
-        list.forEach((item)=>item.addEventListener('mouseover',activeLink))
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
