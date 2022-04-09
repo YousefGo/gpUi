@@ -17,7 +17,16 @@ box-sizing: border-box;
  --black:#999;
  --main2:  #2a558f;
 }
-
+.btn-main{
+    background: #3b69a4;
+    color:white;
+}
+.btn-main:hover{
+    background:white ;
+    color: #3b69a4;
+    border: 2px solid  #3b69a4;
+    border-radius: 5px;
+}
 /*body  */
 body{
  min-height: 100wh;
@@ -259,6 +268,22 @@ background-color:var(--main);
 .cardBox .cardInternal:hover .cardName,
 .cardBox .cardInternal:hover .number{
     color:var(--white);
+}
+
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:30px;
+    margin-top:10px;
+}
+.details .recentAnalysis{
+    position: relative;
+    width: 100%;
+    display: grid;
+    background: var(--white);
 }
 
 
