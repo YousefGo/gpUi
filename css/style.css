@@ -3,7 +3,11 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
 }
+
+
+
 
 :root{
  --main: #3b69a4 ; /* main color*/
@@ -18,9 +22,11 @@ box-sizing: border-box;
 body{
  min-height: 100wh;
  overflow-x: hidden;
+ width: 100wh;
+ 
 }
 /* container-fuld */  
-.container{
+.Appcontainer{
     position: relative;
     width: 100%;
 }
@@ -211,7 +217,7 @@ font-size: 1.75em;
     grid-template-columns: repeat(4,1fr);
     grid-gap:30px;
 }   
-.cardBox .card{
+.cardBox .cardInternal{
     position: relative;
     background: var(--white);
     box-shadow: 0 7px 10px   rgb(189, 211, 217);
@@ -222,7 +228,7 @@ font-size: 1.75em;
     display: flex;
 }
 
-.cardBox .card .number{
+.cardBox .cardInternal .number{
     position: relative;
     font-weight: 500;
     font-size: 2.5em;
@@ -231,7 +237,7 @@ font-size: 1.75em;
 }
 
 
-.cardBox .card .cardName{
+.cardBox .cardInternal .cardName{
     margin-top: 5px;
     font-size: 1em;
     color:var(--black1);
@@ -240,18 +246,18 @@ font-size: 1.75em;
 }
 
 
-.cardBox .card .iconBx{
+.cardBox .cardInternal .iconBx{
     font-size: 3.5em;
     color:var(--main);
 }
 
-.cardBox .card:hover{
+.cardBox .cardInternal:hover{
 background-color:var(--main);
 
 }
-.cardBox .card:hover .iconBx,
-.cardBox .card:hover .cardName,
-.cardBox .card:hover .number{
+.cardBox .cardInternal:hover .iconBx,
+.cardBox .cardInternal:hover .cardName,
+.cardBox .cardInternal:hover .number{
     color:var(--white);
 }
 
