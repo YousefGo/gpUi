@@ -17,6 +17,23 @@ box-sizing: border-box;
  --black:#999;
  --main2:  #2a558f;
 }
+.mainblue{
+    color:var(--main)
+}
+
+select:hover{
+    color:var(--main);
+    border: 1.5px solid var(--main);
+}
+
+select:active{
+    border: 1.5px solid var(--main);
+    outline: none;
+}
+
+select:visited{
+    border: 1.5px solid var(--main);   
+}
 .btn-main{
     background: #3b69a4;
     color:white;
@@ -26,6 +43,11 @@ box-sizing: border-box;
     color: #3b69a4;
     border: 2px solid  #3b69a4;
     border-radius: 5px;
+}
+
+/*  */
+.broderMain{
+    border: 2px dotted #3b69a4;
 }
 /*body  */
 body{
@@ -260,6 +282,12 @@ font-size: 1.75em;
     color:var(--main);
 }
 
+
+.iconImg{
+    font-size: 5em;
+    color:var(--main);
+}
+
 .cardBox .cardInternal:hover{
 background-color:var(--main);
 
@@ -318,20 +346,24 @@ color:var(--black1);
 border-bottom: 1px solid rgb(189, 211, 217);
 }
 
-
+.searchLebalfix{
+    display: inline;
+}
 .details .recentAnalysis  .mainTable tr:hover {
-    
+    background-color: #20529456;
     border-bottom: none;
     }
 
 
-.details .recentAnalysis  .mainTable tbody tr:hover {
-    background:var(--main);
-    color:var(--white);
+
+
+    .details .recentAnalysis  .mainTable tbody tr:hover.a{
+        color:var(--white);
     }
 
 .details .recentAnalysis  .mainTable tr td  {
     padding: 10px;
+    
     }    
 .status.done{
     padding: 2px 4px ;
@@ -342,13 +374,15 @@ border-bottom: 1px solid rgb(189, 211, 217);
     font-weight: 500;
 }
 .status.progress{
-    padding: 2px 4px ;
+    padding: 5px 4px ;
     background-color: rgb(214, 219, 64);
     color:var(--white);
     border-radius: 10px;
     font-size: 14px;
     font-weight: 500;
+    height: fit-content !important;
 }
+
 .status.notstart{
     padding: 2px 4px ;
     background-color: rgb(219, 64, 64);
@@ -360,7 +394,7 @@ border-bottom: 1px solid rgb(189, 211, 217);
 .downlode{
     padding: 5px 4px ;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
 }
 .topcustoemrs{
@@ -372,6 +406,12 @@ border-bottom: 1px solid rgb(189, 211, 217);
     border-radius: 20px;
     background: var(--white);
 
+}
+.wid-100px{
+    width: 100px;
+}
+.fit-content{
+    width: fit-content;
 }
 
 @media(max-width:991px){

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+
+
+
+    <title> تحليل البيانات </title>
+</head>
+<body>
+    <div class="Appcontainer">
+        <div class="navigation">
+            <ul>
+
+                 
+                <li>
+                    <a href="">
+                        <span class="icon"> <ion-icon name="map-outline"></ion-icon>  </span>
+                        <span class="title"> ورشة تحليل البيانات  </span>
+                    </a>
+                  </li>
+                
+                <li>
+                  <a href="index.html">
+                      <span class="icon"> <ion-icon name="home-outline"></ion-icon></span>
+                      <span class="title"> الرئيسية  </span>
+                  </a>
+                </li>
+
+                <li>
+                    <a href="store.html">
+                        <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+                        <span class="title"> المتجر   </span>
+                    </a>
+                  </li>
+
+                <li>
+                    <a href="data.html">
+                        <span class="icon"> <ion-icon name="server-outline"></ion-icon></span>
+                        <span class="title">البيانات  </span>
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a href="analysis.html">
+                        <span class="icon"> <ion-icon name="stats-chart-outline"></ion-icon></span>
+                        <span class="title"> التصنيفات   </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="resluts.html">
+                        <span class="icon"> <ion-icon name="reader-outline"></ion-icon></span>
+                        <span class="title">الننتائج   </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="">
+                        <span class="icon">  <ion-icon name="enter-outline"></ion-icon></span>
+                        <span class="title">خروج   </span>
+                    </a>
+                  </li>
+             </ul> 
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                 <!-- search -->
+                <div class="search">
+                    <label class="searchLebalfix">
+                        <input type="text" placeholder="ابحث هنا ">
+                        <ion-icon name="search-outline"></ion-icon>
+
+                    </label>
+                </div>
+                <!-- User Image -->
+                <div class="user">
+                    <img src="img/user.jpg" width="50px" height="50px"  alt="avater">
+                </div>
+            </div>
+            <!--End of topbar-->
+            <div class="cardBox">
+            </div>
+
+            <div class="details  ">
+                <div class="recentAnalysis  ">
+                  <div class="cardHeader">
+                      <h2> قائمة البيانات  </h2>
+                                 <!-- Button trigger modal -->
+                            <button type="button" class="btn  actionButton btn-main" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                طلب بيانات جديدة 
+                            </button>
+                
+                            <!-- Modal -->
+                            <div class="modal fade text-left" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">طلب بيانات جديدة من سلة</h5>
+                                    <button type="button" class="btn-close m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                     <form action="">
+                                        <label for="exampleFormControlInput1" class="form-label"> اسم للبيانات(اختياري) </label>
+                                        <input class="form-control" type="text" placeholder="الرجاء تسمية البيانات " aria-label="default input example">
+
+                                        <label for="exampleFormControlInput1" class="form-label"> تاريخ البداية   </label>
+                                        <input class="form-control" type="date"  aria-label="default input example">
+
+
+                                        <label for="exampleFormControlInput1" class="form-label"> تاريخ النهاية   </label>
+                                        <input class="form-control" type="date"  aria-label="default input example">
+                                     </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn actionButton btn-main"> تأكيد الطلب  </button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق </button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+  
+                     </div>
+                     <table class="mainTable">
+                        <thead>
+                            <tr>
+                                <td>م</td>
+                                <td> الاسم </td>
+                                <td>  تاريخ طلب  البيانات</td>
+                                <td> الحصول على البيانات </td>
+
+                                <td>تحكم  </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>تجربة </td>
+                              <td>02-04-2022  </td>
+                              <td>03-04-2020</td>
+                              <td> <a href="#" class="downlode"> <ion-icon name="arrow-down-circle"></ion-icon></a> 
+                                <a href="#" class="downlode"> <ion-icon name="trash-outline" class="text-danger" ></ion-icon></a>   
+                            </td>
+                          </tr>
+                          <tr>
+                              <td>2</td>
+                              <td> بيانات شهر مارس </td>
+                              <td>04-04-2022  </td>
+                              <td>05-04-2020 </td>
+                              <td> <a href="#" class="downlode"> <ion-icon name="arrow-down-circle"></ion-icon></a> 
+                                <a href="#" class="downlode"> <ion-icon name="trash-outline" class="text-danger"></ion-icon></a> 
+                            </td>
+                          </tr>
+  
+                       
+  
+  
+                        
+                        </tbody>
+  
+                    </table>
+                </div>
+
+            
+                    
+         </div>
+        </div>
+    </div>
+
+
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+ 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+    <script src="js/script.js"></script>
+</body>
+</html>
