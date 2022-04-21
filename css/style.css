@@ -243,18 +243,18 @@ font-size: 1.75em;
 .cardBox{
     position: relative;
     width:100% ;
-    padding: 20px;
+    padding: 15px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap:30px;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:15px;
 }   
 .cardBox .cardInternal{
     position: relative;
     background: var(--white);
     box-shadow: 0 7px 10px   rgb(189, 211, 217);
-    border-radius: 20px;
+    border-radius: 15px;
     justify-content: space-between;
-    padding: 30px;
+    padding: 15px;
     cursor: pointer;
     display: flex;
 }
@@ -262,9 +262,12 @@ font-size: 1.75em;
 .cardBox .cardInternal .number{
     position: relative;
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 1.2em;
     color:var(--main);
 
+}
+.sm-font{
+    font-size: 1em !important;
 }
 
 
